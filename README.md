@@ -3,7 +3,7 @@
 This library contains a set of Flows and subtasks to process spreadsheets:
 - CTX-PS-Main is a subtask to be invoked by a LivePortal flow that allows a user to:
   - view a list of files that have been uploaded, alongside their status
-  - view a list of the lies inside uploaded files, alongside their status
+  - view a list of the lines inside uploaded files, alongside their status
   - upload new files and begin prcessing their contained lines
 - CTX-PS-Process-File is a Flow to import data from a file on the Cortex server, and start asynchronously one execution of the CTX-PS-Process-Line flow for each line in the file
 - CTX-PS-Process-Line is a Cortex Flow to process a single line in an uploaded file, and to maintain the status of both the line and the file; this flow starts synchronousy via a Cortex FlowAPI an execution of a user-defined worker flow.
