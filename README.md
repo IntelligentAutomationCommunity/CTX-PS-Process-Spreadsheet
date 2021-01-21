@@ -8,6 +8,8 @@ This library contains a set of Flows and subtasks to process spreadsheets:
 - CTX-PS-Process-File is a Flow to import data from a file on the Cortex server, and start asynchronously one execution of the CTX-PS-Process-Line flow for each line in the file
 - CTX-PS-Process-Line is a Cortex Flow to process a single line in an uploaded file, and to maintain the status of both the line and the file; this flow starts synchronousy via a Cortex FlowAPI an execution of a user-defined worker flow.
  
+Example use of this library is shown in the CTX-PS-Example-GUI and CTX-PS-Example-Worker flows which are included in the package.
+
  # Dependencies
 This library uses subtasks from the following libraries;
 - CTX-Logging
