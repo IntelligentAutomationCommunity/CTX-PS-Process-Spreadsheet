@@ -65,7 +65,7 @@ The worker flow should accept the following input parameters:
 - **i_user-data**: A Text variable containing the value passed to the i_user-data parameter of the CTX-PS-Main subtask
 ### Output parameters
 The worker flow should set the following two output parameters:
-- **o_status**: A Text variable to contain the status ofthe line; this should be set to either "Fail" or "Success"
+- **o_status**: A Text variable to contain the status of the line after processing; a value of "Success" indicates successful completion; any other value indicates failed completion
 - **o_status-reason**: A Text variable describing the cause of the status
 
 Additionally, the worker flow may return the following output parameter:
