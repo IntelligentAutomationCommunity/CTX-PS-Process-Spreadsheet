@@ -13,7 +13,7 @@ CREATE TABLE [dbo].[Lines](
 	[processingstarttime] [datetime] NULL,
 	[processingendtime] [datetime] NULL,
 	[flow-uuid] [varchar](max) NULL
- CONSTRAINT [PK_PS-Lines] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Lines] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -21,6 +21,6 @@ CREATE TABLE [dbo].[Lines](
 
 GO
 
-ALTER TABLE [dbo].[PRJ0046-Lines] ADD  CONSTRAINT [DF_PS-Lines_id]  DEFAULT (newid()) FOR [id]
+ALTER TABLE [dbo].[Lines] ADD  CONSTRAINT [DF_Lines_id]  DEFAULT (newid()) FOR [id]
 GO
 

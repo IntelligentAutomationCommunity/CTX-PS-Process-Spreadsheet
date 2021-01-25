@@ -17,7 +17,7 @@ CREATE TABLE [dbo].[Files](
 	[lines_started] [int] NULL,
 	[lines_failed] [int] NULL,
 	[lines_complete] [int] NULL,
- CONSTRAINT [PK_PS-Spreadsheets] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Files] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -25,6 +25,6 @@ CREATE TABLE [dbo].[Files](
 
 GO
 
-ALTER TABLE [dbo].[Files] ADD  CONSTRAINT [DF_PS-Spreadsheets_id]  DEFAULT (newid()) FOR [id]
+ALTER TABLE [dbo].[Files] ADD  CONSTRAINT [DF_Files_id]  DEFAULT (newid()) FOR [id]
 GO
 
